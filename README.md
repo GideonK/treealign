@@ -15,7 +15,7 @@ This software is a Python 3 reimplementation and continuation of Perl code devel
 
 * ten-fold.py: This script creates folds for k-fold cross validation of tree alignment experiments using:
   * two parallel TIGER-XML treebank files
-    * a Stockholm TreeAligner (STA) style XML alignment file referring to these treebanks.
+  * a Stockholm TreeAligner (STA) style XML alignment file referring to these treebanks.
 
 ## Libraries
 
@@ -45,9 +45,9 @@ Kapanadze, O., Kotzé, G. and Hanneforth, T. 2020. [Building Resources for Georg
 * [Lingua-Align](https://bitbucket.org/tiedemann/lingua-align/wiki/Home): A toolkit providing scripts and libraries relating to the training and testing of automated tree alignment.
 * [The TIGER-XML treebank encoding format](https://www.ims.uni-stuttgart.de/documents/ressourcen/werkzeuge/tigersearch/doc/html/TigerXML.html)
 
-Author: Gideon Kotzé
-Email: dr.gideon.kotze@gmail.com
-Website: www.gideonkotze.co.za
+Author: Gideon Kotzé  
+Email: dr.gideon.kotze@gmail.com  
+Website: www.gideonkotze.co.za  
 Last modified: 27 June 2020
 
 Copyright: See LICENSE
