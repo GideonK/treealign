@@ -22,12 +22,15 @@ Scripts
   * two parallel TIGER-XML treebank files
   * a Stockholm TreeAligner (STA) style XML alignment file referring to these treebanks.
 
+* **check-STA-align.py**: Given a parallel treebank consisting of two TIGER-XML files and a STA XML file, it checks whether all the referenced nodes in the STA XML occur in the TIGER-XML files.
+    
 Libraries
 =========
 
 * **tiger.py**: A list of classes and functions that handle treebank files in TIGER-XML format using lxml.etree.
 * **sta.py**: A list of classes and functions that handle XML files in Stockholm TreeAligner format.
-* **files.py**: File handling code.
+* **files.py**: A list of functions that handle file names and paths.
+* **data.py**: Reserved for classes and functions that handle data structures.
 
 Data
 ====

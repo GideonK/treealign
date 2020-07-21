@@ -4,11 +4,11 @@
 ## - two TIGER-XML treebank files
 ## - a Stockholm TreeAligner (STA) style XML alignment file referring to these treebanks.
 
-## It requires Python 3 and the lxml package (https://lxml.de/installation.html). It may work on Python 2.x but has not been tested.
+## It requires Python 3 and the lxml package (https://lxml.de/installation.html). It has not been tested on Python 2.
 
 ## Example commands:
-## python3 ten-fold.py -a ~/align/lit+law/exp/013ALM-270_normalized.xml -o ~/align/lit+law/folds
-## python3 ten-fold.py -a ~/align/lit+law/308_corpus-with-308/ALM-308_normalized.xml -o ~/align/lit+law/308_folds_corpus-with-308
+# >>> python3 ten-fold.py -a ~/align/lit+law/exp/013ALM-270_normalized.xml -o ~/align/lit+law/folds
+# >>> python3 ten-fold.py -a ~/align/lit+law/308_corpus-with-308/ALM-308_normalized.xml -o ~/align/lit+law/308_folds_corpus-with-308
 
 ## See end of document for more information.
 
@@ -364,6 +364,10 @@ with open("test_folds.txt", "w+") as file:
     for l in test_lines:
         file.write(l)
 
+# =============
+# DOCUMENTATION
+# =============
+
 ## Keeping to convention, the alignment set is randomised first. Afterwards, nine copies are made of the randomised set so that it comprises ten sets in total. Each set is split up into ten parts, called folds, of equal size, where the tenth fold consists of a different part for each set. Numerically, the ten set can be presented as follows:
 
 ## Set 1: 1 2 3 4 5 6 7 8 9 10
@@ -402,4 +406,3 @@ with open("test_folds.txt", "w+") as file:
 
 ## TODO:
 # - Split alignment training and testing in one step while removing elements, instead of in two steps (i.e. not creating an object twice).
-# - Build in more tests. Make Python 2.x compatible.
